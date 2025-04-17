@@ -1,0 +1,98 @@
+<div class="grid">
+  <div class="col-12">
+    <div class="content">
+      <!--LOGIN -->
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="onSubmitLoginForm()"
+      >
+        <p-card
+          header="login"
+          subheader="Use uma conta existente."
+          *ngIf="loginCard"
+        >
+          <div class="inputs">
+            <input
+              type="email"
+              pInputText
+              placeholder="your email"
+              formControlName="email"
+            />
+          </div>
+
+          <div class="inputs">
+            <input
+              type="password"
+              pInputText
+              placeholder="your password"
+              formControlName="password"
+            />
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              pButton
+              pRipple
+              label="Login"
+              [disabled]="!this.loginForm.valid"
+            ></button>
+          </div>
+
+          <span (click)="loginCard = !loginCard">Criar conta.</span>
+        </p-card>
+      </form>
+
+      <!-- REGISTER -->
+      <form
+        [formGroup]="registerForm"
+        (ngSubmit)="onSubmitRegisterform()"
+      >
+        <p-card
+          header="Register"
+          subheader="Crie uma nova conta."
+          *ngIf="!loginCard"
+        >
+          <div class="inputs">
+            <input
+              type="text"
+              pInputText
+              placeholder="your name"
+              formControlName="name"
+            />
+          </div>
+
+          <div class="inputs">
+            <input
+              type="email"
+              pInputText
+              placeholder="your email"
+              formControlName="email"
+            />
+          </div>
+
+          <div class="inputs">
+            <input
+              type="password"
+              pInputText
+              placeholder="your password"
+              formControlName="password"
+            />
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              pButton
+              pRipple
+              label="Register"
+              [disabled]="!this.registerForm.valid"
+            ></button>
+          </div>
+
+          <span (click)="loginCard = !loginCard">Fazer Login.</span>
+        </p-card>
+      </form>
+    </div>
+  </div>
+</div>

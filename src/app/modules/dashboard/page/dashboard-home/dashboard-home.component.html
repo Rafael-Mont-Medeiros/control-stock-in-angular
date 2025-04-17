@@ -1,0 +1,19 @@
+<app-tool-bar-navigation></app-tool-bar-navigation>
+
+<div class="grid">
+  <div class="col-12">
+    <!-- LAYOUT GRÁFICO DO ESTOQUE -->
+
+    <p-card
+      header="Quantidade de produtos em estoque"
+      styleClass="shadow-3 m-5 text-indigo-800"
+    >
+      <p-chart
+        type="bar"
+        [data]="produtsChartDatas"
+        [options]="productsChartOptions"
+      ></p-chart>
+
+    </p-card>
+  </div>
+</div>

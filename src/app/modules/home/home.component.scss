@@ -1,0 +1,46 @@
+.grid{
+  background-image: url(../../../assets/background-login.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vmax;
+
+}
+
+form{
+  margin-top: 10rem;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inputs input {
+  margin-bottom: 1rem;
+}
+
+button{
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+span{
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .grid{
+    background-position: top;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid{
+    height: 100vmax;
+  }
+}
