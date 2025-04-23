@@ -1,3 +1,9 @@
 <app-tool-bar-navigation></app-tool-bar-navigation>
 
-<h1>produtos</h1>
+<app-products-table
+  [products]="productsData"
+  (productEvent)="handleProductionAction($event)"
+  (deleteProductEvent)="handleDeleteProductAction($event)"
+></app-products-table>
+
+<p-confirmDialog [style]="{width: '50vw'}"></p-confirmDialog>

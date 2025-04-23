@@ -1,9 +1,9 @@
 <p-toolbar styleClass="bg-indigo-800">
-  <div class="p-toolbar-group-stard">
+  <div class="p-toolbar-group-start">
     <p-button
       icon="pi pi-home"
       label="Dashboard"
-      routerLink="/products"
+      routerLink="/dashboard"
       routerLinkActive="exact_route"
       styleClass="bg-indigo-800 p-button-secondary"
     ></p-button>
@@ -40,11 +40,10 @@
 
   <div class="p-toolbar-group-end">
     <p-button
-      (onClick)="logout()"
+      (click)="logout()"
       icon="pi pi-sign-out"
       label="sair"
       styleClass="p-button-danger"
     ></p-button>
   </div>
 </p-toolbar>
-

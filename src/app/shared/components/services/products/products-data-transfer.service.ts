@@ -19,9 +19,13 @@ export class ProductsDataTransferService {
     }
   }
 
-  /* constructor() { } */
 
-  getProductsDatas() {
+  getProductsDatas(): GetAllProductsResponse[] {
+    return this.productsDatas;
+  }
+
+  //código abaixo estava dando erro la no "products.home.components.ts"
+  /* getProductsDatas() {
     this.productsDataEmitter$
       .pipe(
         take(1),
@@ -34,6 +38,9 @@ export class ProductsDataTransferService {
           }
         },
       });
-      return this.getProductsDatas;
-  }
+      getProductsDatas(): GetAllProductsResponse[] {
+        return this.productsDatas;
+      }
+
+  } */
 }

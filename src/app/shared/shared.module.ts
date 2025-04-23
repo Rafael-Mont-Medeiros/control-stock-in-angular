@@ -6,6 +6,7 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import {DialogService} from 'primeng/dynamicdialog';
 import { ToolBarNavigationComponent } from './components/tool-bar-navigation/tool-bar-navigation.component'
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,6 +18,8 @@ import { ToolBarNavigationComponent } from './components/tool-bar-navigation/too
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule, //nav-bar não funcionava por falta dessa importação.
+
     //primeNG
     ToolbarModule,
     CardModule,

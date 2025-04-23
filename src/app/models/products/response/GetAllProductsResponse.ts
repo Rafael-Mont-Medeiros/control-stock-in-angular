@@ -1,4 +1,3 @@
-
 export interface GetAllProductsResponse{
   id: string;
   name: string;
